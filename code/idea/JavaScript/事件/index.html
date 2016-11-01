@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <!--button action-->
+    <button onclick="demo()">按钮</button>
+    <script>
+        function demo() {
+            alert("hello");
+        }
 
+        function onOver(ooj) {
+            ooj.innerHTML = "hello";
+        }
+
+        function onOut(ooj) {
+            ooj.innerHTML = "world";
+        }
+    </script>
+
+    <div class="div" onmouseout="onOut(this)" onmouseover="onOver(this)"></div>
 </body>
 </html>
